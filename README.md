@@ -7,6 +7,7 @@ The 3D automaton extends the [2D result](https://github.com/goektug/Equation-Aut
 ---
 
 ## The Core Result
+### The Magic Angle Connection
 
 The automaton rule is:
 
@@ -24,11 +25,9 @@ p² - p + 2/9  = 0
 The discriminant is exactly **1/9**, giving roots:
 
 ```
-p₁ = 1/2 + 1/6 = 2/3
-p₂ = 1/2 - 1/6 = 1/3
+p₁ = 1/2 + 1/6 = 2/3 = sin²(θ_m) 
+p₂ = 1/2 - 1/6 = 1/3 = cos²(θ_m)
 ```
-
-These are exact rational numbers — far cleaner than the 2D roots cos²(π/8) and sin²(π/8).
 
 At this point no trigonometry has appeared anywhere — only an integer neighbor count, a probability, and a quadratic equation. The trigonometric structure emerges from the geometry of the 3D cube.
 
@@ -37,11 +36,26 @@ regular tetrahedron inscribed in the 3×3×3 cube:
 
 cos²(x) = 2/3  →  x = arccos(√(2/3))
 
-The complementary angle arccos(1/√3) ≈ 54.74° is the **tetrahedral 
-bond angle** — the angle between sp³ hybrid orbitals in carbon and 
-the interior angle of a regular tetrahedron. The 3D fixed points are 
-therefore not arbitrary rational numbers but the natural projections 
-of tetrahedral geometry onto the probability simplex.
+The roots p₁ = 2/3 and p₂ = 1/3 are not arbitrary rational numbers.
+They are the squared trigonometric projections of the **magic angle**
+θ_m = arccos(1/√3) ≈ 54.7356°:
+
+The magic angle is half of the tetrahedral angle arccos(−1/3) ≈ 109.47°
+— the opening angle formed when a cube is rotated from its space diagonal
+axis, and the angle between any two vertices through the exact center of
+a regular tetrahedron. The 3D fixed points are therefore geometrically
+determined by the symmetry of the tetrahedron inscribed in the 3×3×3
+Moore cube.
+
+The parallel with 2D is exact:
+
+    2D: p₁ = cos²(π/8),  p₂ = sin²(π/8)  — half-angle of π/4 (square lattice)
+    3D: p₁ = sin²(θ_m),  p₂ = cos²(θ_m)  — half-angle of tetrahedral angle
+
+In 2D the governing angle π/8 is half of the self-dual angle π/4 of the
+square lattice. In 3D the governing angle θ_m is half of the tetrahedral
+angle arccos(−1/3) of the cubic lattice. Each dimension's phase boundaries
+are encoded in the half-angle of its lattice's natural symmetry angle.
 
 ---
 
