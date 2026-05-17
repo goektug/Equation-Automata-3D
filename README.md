@@ -32,6 +32,17 @@ These are exact rational numbers — far cleaner than the 2D roots cos²(π/8) a
 
 At this point no trigonometry has appeared anywhere — only an integer neighbor count, a probability, and a quadratic equation. The trigonometric structure emerges from the geometry of the 3D cube.
 
+The roots p₁ = 2/3 and p₂ = 1/3 connect to the geometry of the 
+regular tetrahedron inscribed in the 3×3×3 cube:
+
+cos²(x) = 2/3  →  x = arccos(√(2/3))
+
+The complementary angle arccos(1/√3) ≈ 54.74° is the **tetrahedral 
+bond angle** — the angle between sp³ hybrid orbitals in carbon and 
+the interior angle of a regular tetrahedron. The 3D fixed points are 
+therefore not arbitrary rational numbers but the natural projections 
+of tetrahedral geometry onto the probability simplex.
+
 ---
 
 ## The 6/27 Approximation
