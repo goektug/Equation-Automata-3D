@@ -247,7 +247,7 @@ Requires PyCX Simulator:
 https://github.com/hsayama/PyCX
 ```
 
-**Performance note:** L=100 gives a 100³ = 1,000,000 cell grid. Use L=30 for fast testing (27,000 cells) and L=100 for production results. Each step iterates all cells with full 3D Moore neighbor counting (27 cells per call).
+**Performance note:** L=100 gives a 100³ = 1,000,000 cell grid. Each step iterates all cells with full 3D Moore neighbor counting (27 cells per call).
 
 ---
 
