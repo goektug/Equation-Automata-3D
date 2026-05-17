@@ -34,8 +34,6 @@ At this point no trigonometry has appeared anywhere — only an integer neighbor
 The roots p₁ = 2/3 and p₂ = 1/3 connect to the geometry of the 
 regular tetrahedron inscribed in the 3×3×3 cube:
 
-cos²(x) = 2/3  →  x = arccos(√(2/3))
-
 The roots p₁ = 2/3 and p₂ = 1/3 are not arbitrary rational numbers.
 They are the squared trigonometric projections of the **magic angle**
 θ_m = arccos(1/√3) ≈ 54.7356°:
