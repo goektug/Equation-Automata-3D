@@ -1,6 +1,6 @@
 # Equation Automata 3D
 
-This code contains no trigonometric functions. It defines a 3D toroidal grid, counts neighbors, and applies integer comparison rules. When you run it, the print statement outputs a value converging to approximately **0.22** — the 3D Ising model critical temperature — and the system initialized at p = 2/3 converges to **1/3 × L³** alive cells.
+This code contains no trigonometric functions. It defines a 3D toroidal grid, counts neighbors, and applies integer comparison rules. When you run it, the print statement outputs a value converging to approximately **0.22** — the 3D Ising model critical temperature — and the system initialized at p = Kc²ᴰ converges to **1/3 × L³** alive cells.
 
 The 3D automaton extends the [2D result](https://github.com/goektug/Equation-Automata) by replacing the 3×3 Moore square (9 cells) with the 3×3×3 Moore cube (27 cells). The same critical threshold integer **6** — applied to the full 3D cube — gives a rational approximation to the 3D Ising critical temperature with 0.258% accuracy. More remarkably, this generalises to a **closed-form dimensional recursion** that tracks known Ising critical couplings across all dimensions.
 
