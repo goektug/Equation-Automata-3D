@@ -35,8 +35,10 @@ L = 100  # size of space: LxL
 #p = 1/sqrt(2)                  # sigmoid of 2 * Ising critical temperature
 #p = np.log(1 + sqrt(2)) / 2    # Ising critical temperature 
 
-p = 1/3
+#p = 1/3
 #p = 2/3
+
+p = 6 / 27
 
 #p = float(0.5 + (1 / (2 * sqrt(2))))
 #p = 0.8536
@@ -169,7 +171,7 @@ def step():
                             nc[(x - 1) % L, (y + z) % L, q] = 0
     
                         h = number_of_Neumann_neighbors(x, y, q)
-                        if h >= 6:
+                        if h >= 4.5:
                             nc[x, y, q] = 1 if g <= 27 else 0
     
                         if g / 27 > (1-p) * p: 
