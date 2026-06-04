@@ -149,7 +149,7 @@ def step():
             for q in range(L):
                 g = number_of_Moore_neighbors(x, y, q)
                 if c[x, y, q] == 0:
-                    nc[x, y, q] = 0 if g <= 27 else 1
+                    nc[x, y, q] = 0 if g <= 18 else 1
                     array0.append(c[x, y, q])
                 elif c[x, y, q] == 1:
                     array1.append(c[x, y, q])
@@ -171,8 +171,8 @@ def step():
                             nc[(x - 1) % L, (y + z) % L, q] = 0
     
                         h = number_of_Neumann_neighbors(x, y, q)
-                        if h >= 4.5:
-                            nc[x, y, q] = 1 if g <= 27 else 0
+                        if h >= 3:
+                            nc[x, y, q] = 1 if g <= 18 else 0
     
                         if g / 27 > (1-p) * p: 
                             nc[(x + 1) % L, y, q] = 1
